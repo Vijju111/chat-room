@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-time Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Chat Room</h2>
+      <button id="clearButton">Clear Chat</button>
+    </div>
+    <div class="chat-sidebar">
+      <ul class="user-list"></ul> 
+    </div>
+    <div class="chat-main">
+      <div class="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Enter your message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
